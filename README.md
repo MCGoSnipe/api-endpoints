@@ -1,6 +1,10 @@
 # ENDPOINTS
-# GET `/api/status/name/<name>`
 
+## Status
+`GET /api/status/name/<NAME>`
+or
+`GET /api/status/id/<UUID>`
+NAME is the profile name, UUID is the UUID of the profile, with or without dashes.
 ```
 {
   "status": "blocked"
