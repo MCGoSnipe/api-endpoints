@@ -8,11 +8,6 @@ or
 NAME is the profile name, UUID is the UUID of the profile, with or without dashes.
 ```
 {
-  "status": "blocked"
-}
-```
-```
-{
   "status": "available"
 }
 ```
@@ -51,3 +46,7 @@ NAME is the profile name, UUID is the UUID of the profile, with or without dashe
   ]
 }
 ```
+```
+{
+ "error": "error here"
+}
