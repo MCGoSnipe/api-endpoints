@@ -21,6 +21,8 @@ NAME is the profile name, UUID is the UUID of the profile, with or without dashe
   "status": "soon",
   "time": "2011-10-05T14:48:00.000Z"
 }
+```
+```
 {
   "status": "taken",
   "namemc": {
