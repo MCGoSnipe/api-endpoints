@@ -1,5 +1,19 @@
 # ENDPOINTS
 
+## Authentication
+
+Redirect users to [here](https://login.live.com/oauth20_authorize.srf?client_id=9abe16f4-930f-4033-b593-6e934115122f&response_type=code&redirect_uri=https%3A%2F%2Fapi.gosnipe.tech%2Fapi%2Fauthenticate&scope=XboxLive.signin%20XboxLive.offline_access) to authenticate.
+
+Same response as refresh endpoint (shown below).
+### Refresh
+
+`GET /api/refresh?code=<refresh token>`
+One of the 2 responses below:
+```
+{"error": null, "access_token": "JWT for Minecraft API", "refresh_token": "Refresh token for use with this API"}
+{"error": "error descriptor here", "access_token": null, "refresh_token": null} // access token and refresh token arent provided if code isn't passed
+```
+
 ## Status
 `GET /api/status/name/<NAME>`
 or
